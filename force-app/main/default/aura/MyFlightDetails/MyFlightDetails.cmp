@@ -1,0 +1,74 @@
+<aura:component controller="MyFlights" implements="forceCommunity:availableForAllPageTypes" access="global">
+<aura:attribute name="oneFli" type="Flight__c" />
+<lightning:card title="Flight" iconName="custom:custom20">
+    <article class="slds-card">
+      <div class="slds-card__header slds-grid" >
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+          <aura:if isTrue="{!v.oneFli.Ticket_Status__c=='Confirmed'}">
+          <div class="slds-no-flex" >
+            <Lightning:button class="slds-button slds-button_neutral" variant="brand-outline" label="Cancel Ticket" onclick="{!c.cancele}"></Lightning:button>
+          </div>
+        </aura:if>
+        </header>
+      </div>
+      <div class="slds-card__body">
+        <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout" role="grid">
+          <thead>
+            <tr class="slds-line-height_reset">
+              <th class="" scope="col">
+                <div class="slds-truncate" title="From">From</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="To">To</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Departure">Departure Date</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Carrier">Carrier</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Status">Status</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Price">Price</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="slds-hint-parent">
+              <th scope="row">
+                <div class="slds-truncate" title="from">{!v.oneFli.From_Country__c},{!v.oneFli.From_City__c},<lightning:formattedText value="{!v.oneFli.From_Airport__c}"/>-{!v.oneFli.From_Airport_Code__c}
+                </div>
+              </th>
+              <td role="gridcell">
+                <div class="slds-truncate" title="To">{!v.oneFli.To_Country__c},{!v.oneFli.To_City__c},<lightning:formattedText value="{!v.oneFli.To_Airport__c}"/>-{!v.oneFli.To_Airport_Code__c}
+                </div>
+              </td>
+              <td role="gridcell">
+                <div class="slds-truncate" title="Departure Date">
+                  <lightning:formattedText value="{!v.oneFli.Departure_Date__c}"/>
+                </div>
+              </td>
+              <td role="gridcell">
+                <div class="slds-truncate" title="Carrier">
+                  <lightning:formattedText value="{!v.oneFli.Carrier__c}"/>
+                </div>
+              </td>
+              <td role="gridcell">
+                <div class="slds-truncate" title="Status">
+                  <lightning:formattedText value="{!v.oneFli.Ticket_Status__c}"/>
+                </div>
+              </td>
+              <td role="gridcell">
+                <div class="slds-truncate" title="Price">$<lightning:formattedNumber value="{!v.oneFli.Price__c}"/>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+    </article>
+  </lightning:card>
+</aura:component>	

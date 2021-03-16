@@ -1,0 +1,71 @@
+<aura:component controller="FlightSearchController">
+<aura:attribute name="fli" type="Object"/>
+
+
+<lightning:card >
+    <article class="slds-card">
+      <div class="slds-card__header slds-grid" >
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+          <div class="slds-media__figure">
+            <span class="slds-icon_container slds-icon-standard-contact" title="contact">
+             
+              <span class="slds-assistive-text">contact</span>
+            </span>
+          </div>
+          <div class="slds-media__body">
+            <h2 class="slds-card__header-title">
+              <p  class="slds-card__header-link slds-truncate" >Flight </p>
+                
+             
+            </h2>
+          </div>
+          <div class="slds-no-flex" >
+            <Lightning:button class="slds-button slds-button_neutral" variant="brand-outline" label="Purchase"  onclick="{!c.purchaseFlight}"></Lightning:button>
+          </div>
+        </header>
+      </div>
+      <div class="slds-card__body">
+        <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout" role="grid">
+          <thead>
+            <tr class="slds-line-height_reset">
+              <th class="" scope="col">
+                <div class="slds-truncate" title="From">From</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="To">To</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Departure">Departure Date</div>
+              </th>
+              <th class="" scope="col">
+                <div class="slds-truncate" title="Price">Price</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="slds-hint-parent">
+              <th scope="row">
+                <div class="slds-truncate" title="from">{!v.fli.orgCountryName},{!v.fli.orgCityName},<lightning:formattedText value="{!v.fli.orgAirport}"/>-{!v.fli.orgAirportAlias}
+                </div>
+              </th>
+              <td role="gridcell">
+                <div class="slds-truncate" title="To">{!v.fli.desCountryName},{!v.fli.desCityName},<lightning:formattedText value="{!v.fli.desAirport}"/>-{!v.fli.desAirportAlias}
+                </div>
+              </td>
+              <td role="gridcell">
+                <div class="slds-truncate" title="Departure Date">
+                  <lightning:formattedText value="{!v.fli.departureDate}"/>
+                </div>
+              </td>
+              <td role="gridcell">
+                <div class="slds-truncate" title="Price">$<lightning:formattedNumber value="{!v.fli.MinPrice}"/>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+    </article>
+  </lightning:card>
+</aura:component>	
