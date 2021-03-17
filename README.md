@@ -3,7 +3,7 @@
 ## Project Description
 
 Auraforce is a custom project designed by Mena Soliman that leverages lightning communities, process automation, service cloud, sales cloud, and the lightning aura framework to fulfill the requirements of creating an interactive experience that consumes an external rest API.
-this community called Rocketsky and it's for search and booking tickets flights 
+this community called Rocketsky and it's for search and booking flights tickets 
 
 ## Technologies Used
 
