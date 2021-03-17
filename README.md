@@ -10,6 +10,7 @@ this community called Rocketsky and it's for search and booking tickets flights
 * Github
 * Visual Studio Code
 * Salesforce
+* Lightning Components
 * Google Suite
 * SFDX
 * Experience Cloud
