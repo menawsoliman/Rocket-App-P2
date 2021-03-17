@@ -1,14 +1,47 @@
-# Salesforce DX Project: Next Steps
+# Auraforce - Project Community
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Project Description
 
-## How Do You Plan to Deploy Your Changes?
+Auraforce is a custom project designed by Mena Soliman that leverages lightning communities, process automation, service cloud, sales cloud, and the lightning aura framework to fulfill the requirements of creating an interactive experience that consumes an external rest API.
+this community called Rocketsky and it's for search and booking tickets flights 
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Technologies Used
 
-## Configure Your Salesforce DX Project
+* Github
+* Visual Studio Code
+* Salesforce
+* Google Suite
+* SFDX
+* Experience Cloud
+* Rest API 
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Features
+  * Current:
+  * - community accessible by external users
+  * - any user can search for flights and show flights
+  * - registered users can purchase tickets
+  * - users can show booked flights
+  * - user can request cancelling tickets 
+  * - user can submit cases for flights  
+  * - check  status of submitted cases 
+  
+  * Future:
+  * - Implement customer commenting on open cases
+  * - add the ability to book return flights 
+  * - add payment methods for purchasing tickets 
+  * - add ability to add modificaion to flight like extra baggage, meals ,preferred seat 
+  
+
+## Retrospective
+ * Positives
+ * - Open about issues and always having someone around willing to help
+ * - Finished on time
+ * - mastering converting JSON format to apex 
+ * - Polished product
+ * To Improve
+ * - Better time management relating to deadlines
+ * - Improved knowledge and understanding of limits and restrictions
+
 
 ## Read All About It
 
