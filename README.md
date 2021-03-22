@@ -30,7 +30,7 @@ this community called Rocketsky and it's for search and booking flights tickets
   * - Implement customer commenting on open cases
   * - add the ability to book return flights 
   * - add payment methods for purchasing tickets 
-  * - add ability to add modificaion to flight like extra baggage, meals ,preferred seat 
+  * - add the ability to modify flight by adding  extra baggage, meals ,preferred seat
   * -add feature to show the weather of the selected day for the flight by consuming another REST API
   
 
